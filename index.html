@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summer Arc - Seu Personal Trainer Digital</title>
+  <meta name="description" content="Construa seu melhor verão com treinos personalizados. Personal trainer digital gratuito com planos adaptados ao seu nível.">
+  
+  <!-- Fonte Poppins do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container-aplicativo" style="background-image: url(fundo1.jpg);">
+    <!-- ============================================
+         TELA 1: TELA INICIAL COM FOTO DE FUNDO
+         ============================================ -->
+    <div id="telaInicial" class="tela-inicial animar-entrada-deslizante">
+      <!-- Hero com foto de fundo sombreada -->
+      <div class="secao-hero">
+        <div class="icone-hero animar-pulsar-brilho">
+          <img src="summerlogoaa.png" alt="Summer Arc Logo" class="icone-logo">
+        </div>
+        <h1 class="titulo-hero">Summer Arc</h1>
+        <p class="subtitulo-hero">Construa seu melhor verão — um treino por vez</p>
+        <button class="botao botao-primario" onclick="mostrarFormulario()" style="font-size: 18px; padding: 16px 40px;">
+          Começar Agora
+        </button>
+      </div>
+
+      <!-- Card com recursos -->
+      <div class="cartao">
+        <div class="cabecalho-cartao">
+          <h2 class="titulo-cartao" style="text-align: center;">Seu Personal Trainer Digital</h2>
+          <p class="descricao-cartao" style="text-align: center;">
+            Treinos personalizados baseados no seu perfil e objetivos
+          </p>
+        </div>
+        <div class="conteudo-cartao">
+          <div class="grade-recursos">
+            <div class="caixa-recurso">
+              <div class="icone-recurso">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primaria)">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <h3 class="titulo-recurso">Rápido</h3>
+              <p class="texto-recurso">Configure em menos de 1 minuto</p>
+            </div>
+            <div class="caixa-recurso">
+              <div class="icone-recurso">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primaria)">
+                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                  <path d="M4 22h16"></path>
+                  <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                  <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                  <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+                </svg>
+              </div>
+              <h3 class="titulo-recurso">Personalizado</h3>
+              <p class="texto-recurso">Treino adaptado ao seu nível</p>
+            </div>
+            <div class="caixa-recurso">
+              <div class="icone-recurso">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primaria)">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="9 12 11 14 15 10"></polyline>
+                </svg>
+              </div>
+              <h3 class="titulo-recurso">Eficiente</h3>
+              <p class="texto-recurso">Resultados comprovados</p>
+            </div>
+          </div>
+
+          <div class="caixa-motivacao">
+            <p>
+              <strong>Motivação:</strong> <span id="textoMotivacao"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seis Seções de Explicação -->
+      <div class="cartao secao-como-funciona">
+        <div class="cabecalho-cartao">
+          <h2 class="titulo-cartao" style="text-align: center;">Como funciona?</h2>
+          <p class="descricao-cartao" style="text-align: center;">
+            Conheça todos os benefícios e esclarecimentos que oferecemos para sua jornada fitness
+          </p>
+        </div>
+        <div class="conteudo-cartao">
+          <div class="grade-como-funciona">
+            <div class="passo-como-funciona">
+              <div class="numero-passo">1</div>
+              <h3 class="titulo-passo">Como personalizamos seu treino e sua dieta?</h3>
+              <div class="descricao-passo">
+                <p>Nosso sistema cria treinos e dietas individualizados a partir das informações enviadas no formulário. Cada dado preenchido é utilizado de forma lógica e estruturada para garantir um plano coerente, seguro e realmente adaptado ao seu corpo, ao seu nível de experiência e ao seu objetivo.</p>
+              </div>
+            </div>
+            <div class="passo-como-funciona">
+              <div class="numero-passo">2</div>
+              <h3 class="titulo-passo">Personalização por gênero</h3>
+              <div class="descricao-passo">
+                <p>Homens e mulheres apresentam diferenças fisiológicas, hormonais e estruturais importantes. Por isso, criamos treinos e dietas específicos para cada gênero, levando em conta:</p>
+                <ul class="lista-personalizada">
+                  <li><strong>Prioridades musculares diferentes</strong></li>
+                  <li><strong>Necessidades calóricas individuais</strong></li>
+                  <li><strong>Respostas distintas ao esforço físico</strong></li>
+                </ul>
+                <p>Isso torna o plano muito mais eficiente e realista.</p>
+              </div>
+            </div>
+            <div class="passo-como-funciona">
+              <div class="numero-passo">3</div>
+              <h3 class="titulo-passo">Nível de Experiência</h3>
+              <div class="descricao-passo">
+                <p>Este é um dos fatores que mais influenciam na montagem do treino.</p>
+                
+                <div class="nivel-experiencia">
+                  <p><strong>Iniciante:</strong> Treinos simples, seguros, focados em aprendizado técnico. Mais máquinas, menos complexidade.</p>
+                  <p><strong>Intermediário:</strong> Treinos progressivos, com exercícios mais completos e maior carga. Em algumas divisões, já aplicamos técnicas moderadas.</p>
+                  <p><strong>Avançado:</strong> Aqui entram os métodos de intensidade usados por atletas e praticantes experientes. Além de mais carga e volume, utilizamos técnicas como:</p>
+                  <ul class="lista-tecnicas">
+                    <li><strong>Aquecimento específico:</strong> séries leves para preparar as articulações</li>
+                    <li><strong>Feeder:</strong> séries moderadas para ajustar técnica e carga</li>
+                    <li><strong>Cluster:</strong> blocos de repetições com pausas rápidas</li>
+                    <li><strong>Back-Off:</strong> série final com carga reduzida</li>
+                  </ul>
+                </div>
+                <p>Isso garante um treino denso, eficiente e alinhado ao nível avançado do usuário.</p>
+              </div>
+            </div>
+            <div class="passo-como-funciona">
+              <div class="numero-passo">4</div>
+              <h3 class="titulo-passo">Dias por Semana e Divisão do Treino</h3>
+              <div class="descricao-passo">
+                <p>A sua disponibilidade determina toda a distribuição dos treinos.</p>
+                <div class="dias-treino">
+                  <p><strong>3 dias por semana</strong> → Fullbody ou Lower/Upper focado</p>
+                  <p><strong>4 dias por semana</strong> → Upper/Lower, Push/Pull ou combinações</p>
+                  <p><strong>5 dias por semana</strong> → Divisões avançadas como PPL</p>
+                </div>
+                <p>Assim, mesmo com pouco tempo, você treina de forma eficiente; e com mais dias, você obtém treinos mais completos e detalhados.</p>
+              </div>
+            </div>
+            <div class="passo-como-funciona">
+              <div class="numero-passo">5</div>
+              <h3 class="titulo-passo">O Objetivo Define a Dieta</h3>
+              <div class="descricao-passo">
+                <p>Sua escolha entre ganhar massa ou perder gordura define toda a dieta.</p>
+                
+                <div class="objetivo-dieta">
+                  <div class="tipo-dieta">
+                    <strong>Cutting (perda de gordura)</strong>
+                    <ul>
+                      <li>Déficit calórico controlado</li>
+                      <li>Carboidratos moderados</li>
+                      <li>Proteínas altas</li>
+                      <li>Foco em saciedade</li>
+                    </ul>
+                  </div>
+                  <div class="tipo-dieta">
+                    <strong>Bulking (ganho de massa)</strong>
+                    <ul>
+                      <li>Superávit calórico bem calculado</li>
+                      <li>Carboidratos elevados</li>
+                      <li>Energia para treinos intensos</li>
+                      <li>Construção muscular acelerada</li>
+                    </ul>
+                  </div>
+                </div>
+                <p>As calorias e macros são calculados com base em gênero e intensidade do treino escolhido.</p>
+              </div>
+            </div>
+            <div class="passo-como-funciona">
+              <div class="numero-passo">6</div>
+              <h3 class="titulo-passo">Resultado: Um Plano Individualizado</h3>
+              <div class="descricao-passo">
+                <p>A junção das suas informações com nossa metodologia gera:</p>
+                <ul class="lista-beneficios">
+                  <li>Treinos adequados ao seu nível, corpo e rotina</li>
+                  <li>Dietas alinhadas ao seu objetivo e necessidades</li>
+                </ul>
+                <p>Nada é aleatório e nada é genérico. Tudo é construído com técnica, lógica e precisão, totalmente baseado nos dados que você enviou no formulário.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Conheça Nossa Equipe -->
+      <div class="cartao secao-equipe">
+        <div class="cabecalho-cartao">
+          <h2 class="titulo-cartao" style="text-align: center;">Conheça Nossa Equipe</h2>
+          <p class="descricao-cartao" style="text-align: center;">
+            Profissionais dedicados ao seu sucesso
+          </p>
+        </div>
+        <div class="conteudo-cartao">
+          <div class="container-carrossel-equipe">
+            <button class="botao-carrossel botao-carrossel-anterior" onclick="moverCarrossel(-1)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <div class="carrossel-equipe">
+              <div class="trilha-carrossel-equipe" id="trilhaCarrosselEquipe">
+                <div class="cartao-equipe">
+                  <div class="foto-equipe"><img src="eikesales.jpeg" alt="Eike Sales"></div>
+                  <div class="nome-equipe">Dr. e Personal Eike Sales</div>
+                  <div class="especialidade-equipe">Especialista em Nutrição Esportiva e Fisiologia do Exercício</div>
+                </div>
+                <div class="cartao-equipe">
+                  <div class="foto-equipe"><img src="lucas.jpg" alt="Lucas Brilhante"></div>
+                  <div class="nome-equipe">Personal Lucas Brilhante</div>
+                  <div class="especialidade-equipe">Personal Trainer e Coach de Performance</div>
+                </div>
+                <div class="cartao-equipe">
+                  <div class="foto-equipe"><img src="flavio.jpeg" alt="Flávio Eugênio"></div>
+                  <div class="nome-equipe">Personal Flávio Eugênio</div>
+                  <div class="especialidade-equipe">Preparador Físico e Especialista em HIIT</div>
+                </div>
+                <div class="cartao-equipe">
+                  <div class="foto-equipe"><img src="angelus.JPG" alt="Miguel Angelus"></div>
+                  <div class="nome-equipe">Dr. Miguel Angelus</div>
+                  <div class="especialidade-equipe">Fisioterapeuta Esportivo e Reabilitação</div>
+                </div>
+                <div class="cartao-equipe">
+                  <div class="foto-equipe"><img src="ricardo.jpeg" alt="Ricardo Lattaruli"></div>
+                  <div class="nome-equipe">Dr. Ricardo Lattaruli</div>
+                  <div class="especialidade-equipe">Nutricionista e Chef especializado em dietas fitness</div>
+                </div>
+                <div class="cartao-equipe">
+                  <div class="foto-equipe"><img src="pedrocosta.jpeg" alt="Pedro Costa"></div>
+                  <div class="nome-equipe">Dr. Pedro Henrique Costa</div>
+                  <div class="especialidade-equipe">Coach de Bem-Estar e Mindfulness</div>
+                </div>
+              </div>
+            </div>
+            <button class="botao-carrossel botao-carrossel-proximo" onclick="moverCarrossel(1)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contato -->
+      <div class="cartao secao-contato">
+        <div class="cabecalho-cartao">
+          <h2 class="titulo-cartao" style="text-align: center;">Entre em Contato</h2>
+          <p class="descricao-cartao" style="text-align: center;">
+            Envie sua mensagem
+          </p>
+        </div>
+        <div class="conteudo-cartao">
+          <div class="container-formulario-contato">
+            <form id="formularioContato" onsubmit="manipularEnvioContato(event)">
+              <div class="grupo-entrada-contato">
+                <span class="icone-contato">👤</span>
+                <input
+                  type="text"
+                  id="nomeContato"
+                  class="entrada-contato"
+                  placeholder="Nome"
+                  required
+                />
+              </div>
+              <div class="grupo-entrada-contato">
+                <span class="icone-contato">📧</span>
+                <input
+                  type="email"
+                  id="emailContato"
+                  class="entrada-contato"
+                  placeholder="E-mail"
+                  required
+                />
+              </div>
+              <div class="grupo-entrada-contato">
+                <span class="icone-contato" style="top: 20px;">💬</span>
+                <textarea
+                  id="mensagemContato"
+                  class="entrada-contato area-texto-contato"
+                  placeholder="Mensagem"
+                  required
+                  style="padding-left: 40px;"
+                ></textarea>
+              </div>
+              <button type="submit" class="botao botao-primario" style="width: 100%;">
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================
+         TELA 2: FORMULÁRIO
+         ============================================ -->
+    <div id="telaFormulario" class="tela-formulario oculto animar-entrada-escala">
+      <div class="cartao">
+        <div class="cabecalho-cartao">
+          <h2 class="titulo-cartao">Vamos conhecer você</h2>
+          <p class="descricao-cartao">Preencha seus dados para receber um plano personalizado</p>
+        </div>
+        <div class="conteudo-cartao">
+          <form id="formularioUsuario" onsubmit="manipularEnvio(event)">
+            <!-- Nome -->
+            <div class="grupo-formulario">
+              <label class="rotulo-formulario" for="nome">Nome completo</label>
+              <input
+                type="text"
+                id="nome"
+                class="entrada-formulario"
+                placeholder="Digite seu nome"
+                required
+              />
+            </div>
+
+            <!-- Idade e Peso -->
+            <div class="linha-formulario">
+              <div class="grupo-formulario">
+                <label class="rotulo-formulario" for="idade">Idade (anos)</label>
+                <input
+                  type="number"
+                  id="idade"
+                  class="entrada-formulario"
+                  placeholder="Ex: 25"
+                  min="10"
+                  max="100"
+                  required
+                />
+              </div>
+              <div class="grupo-formulario">
+                <label class="rotulo-formulario" for="peso">Peso (kg)</label>
+                <input
+                  type="number"
+                  id="peso"
+                  class="entrada-formulario"
+                  placeholder="Ex: 70"
+                  min="30"
+                  max="300"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Altura e Gênero -->
+            <div class="linha-formulario">
+              <div class="grupo-formulario">
+                <label class="rotulo-formulario" for="altura">Altura (cm)</label>
+                <input
+                  type="number"
+                  id="altura"
+                  class="entrada-formulario"
+                  placeholder="Ex: 175"
+                  min="100"
+                  max="250"
+                  required
+                />
+              </div>
+              <div class="grupo-formulario">
+                <label class="rotulo-formulario" for="genero">Gênero</label>
+                <select id="genero" class="selecao-formulario" required>
+                  <option value="masculino">♂️ Masculino</option>
+                  <option value="feminino">♀️ Feminino</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Nível -->
+            <div class="grupo-formulario">
+              <label class="rotulo-formulario" for="nivel">Nível de experiência</label>
+              <select id="nivel" class="selecao-formulario" required>
+                <option value="iniciante">🌱 Iniciante - Começando agora</option>
+                <option value="intermediario">💪 Intermediário - Treino regular</option>
+                <option value="avancado">🏆 Avançado - Treino intenso</option>
+              </select>
+            </div>
+
+            <!-- Dias por semana -->
+            <div class="grupo-formulario">
+              <label class="rotulo-formulario" for="frequencia">Quantos dias por semana vai treinar?</label>
+              <select id="frequencia" class="selecao-formulario" required>
+                <option value="3x">📅 3x por semana - Leve</option>
+                <option value="4x">📅 4x por semana - Moderado</option>
+                <option value="5x">📅 5x por semana - Intenso</option>
+              </select>
+            </div>
+
+            <!-- Objetivo -->
+            <div class="grupo-formulario">
+              <label class="rotulo-formulario" for="objetivo">Qual é o seu objetivo?</label>
+              <select id="objetivo" class="selecao-formulario" required>
+                <option value="ganhar">💪 Ganhar massa muscular</option>
+                <option value="perder">🔥 Perder gordura</option>
+              </select>
+            </div>
+
+            <!-- Botões -->
+            <div class="botoes-formulario">
+              <button type="button" class="botao botao-secundario" onclick="mostrarTelaInicial()">
+                Voltar
+              </button>
+              <button type="submit" class="botao botao-primario">
+                Gerar Meu Treino
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================
+         TELA 3: CARREGAMENTO
+         ============================================ -->
+    <div id="telaCarregamento" class="tela-carregamento oculto animar-entrada-escala">
+      <div class="icone-carregamento animar-pulsar-brilho">
+        <img src="logo.png" alt="Summer Arc Logo" class="icone-logo">
+      </div>
+      <h2 class="titulo-carregamento">Gerando seu plano...</h2>
+      <p class="texto-carregamento">Personalizando treino para <span id="nomeCarregamento"></span></p>
+      <div class="container-barra-carregamento">
+        <div class="barra-carregamento"></div>
+      </div>
+    </div>
+
+    <!-- ============================================
+         TELA 4: TREINO PERSONALIZADO
+         ============================================ -->
+    <div id="telaTreino" class="tela-treino oculto animar-entrada-deslizante">
+      <!-- Card de perfil -->
+      <div class="cartao" style="margin-bottom: 24px;">
+        <div class="cabecalho-cartao">
+          <div class="cabecalho-treino">
+            <div>
+              <h2 class="titulo-cartao">Olá, <span id="nomeUsuario"></span>! 👋</h2>
+              <p class="descricao-cartao">Seu plano personalizado está pronto</p>
+            </div>
+            <button class="botao botao-secundario" onclick="reiniciarAplicativo()">
+              Novo Plano
+            </button>
+          </div>
+        </div>
+        <div class="conteudo-cartao">
+          <div class="grade-estatisticas">
+            <div class="caixa-estatistica">
+              <p class="rotulo-estatistica">Idade</p>
+              <p class="valor-estatistica"><span id="idadeUsuario"></span> anos</p>
+            </div>
+            <div class="caixa-estatistica">
+              <p class="rotulo-estatistica">IMC</p>
+              <p class="valor-estatistica" id="imcUsuario"></p>
+            </div>
+            <div class="caixa-estatistica">
+              <p class="rotulo-estatistica">Nível</p>
+              <p class="valor-estatistica" id="nivelUsuario"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sistema de Abas -->
+      <div class="navegacao-abas">
+        <div class="aba ativa" onclick="alternarAba('treino')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          Treino
+        </div>
+        <div class="aba" onclick="alternarAba('dieta')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+            <line x1="6" y1="1" x2="6" y2="4"></line>
+            <line x1="10" y1="1" x2="10" y2="4"></line>
+            <line x1="14" y1="1" x2="14" y2="4"></line>
+          </svg>
+          Dieta
+        </div>
+      </div>
+
+      <!-- Conteúdo das Abas -->
+      <div class="conteudo-aba ativa" id="aba-treino">
+        <!-- Card do plano (com destaque especial) -->
+        <div class="cartao cartao-plano-treino">
+          <div class="cabecalho-cartao">
+            <h2 class="titulo-cartao" id="tituloPlano"></h2>
+            <div class="info-treino">
+              <span>⏱️ Duração: <span id="duracaoPlano"></span></span>
+              <span>📅 Frequência: <span id="frequenciaPlano"></span></span>
+            </div>
+          </div>
+          <div class="conteudo-cartao">
+            <div class="container-dias-treino" id="containerDiasTreino">
+              <!-- Treinos por dia serão inseridos aqui via JavaScript -->
+            </div>
+
+            <div class="caixa-dicas">
+              <h4 class="titulo-dicas">💡 Dicas importantes:</h4>
+              <ul class="lista-dicas">
+                <li>• Mantenha-se hidratado durante o treino</li>
+                <li>• Respeite os intervalos de descanso</li>
+                <li>• Foque na execução correta dos movimentos</li>
+                <li>• Aumente a intensidade progressivamente</li>
+              </ul>
+            </div>
+
+            <!-- Espaço para explicação das técnicas -->
+            <div class="container-explicacao">
+              <h4 class="titulo-explicacao">💡 Explicação das Técnicas Utilizadas</h4>
+              <div class="conteudo-explicacao">
+                <div class="tecnica-item">
+                  <div class="cabecalho-tecnica">
+                    <span class="numero-tecnica">1</span>
+                    <h5 class="titulo-tecnica">Aquecimento (Warm-up + Aquecimento Específico)</h5>
+                  </div>
+                  <div class="descricao-tecnica">
+                    <p>Antes das séries principais, usamos dois tipos de aquecimento:</p>
+                    <div class="detalhes-tecnica">
+                      <div class="tipo-aquecimento">
+                        <strong>Aquecimento Geral:</strong> aumenta temperatura corporal e prepara articulações.
+                      </div>
+                      <div class="tipo-aquecimento">
+                        <strong>Aquecimento Específico:</strong> 1 ou 2 séries leves do próprio exercício, para ativar o padrão motor e lubrificar a articulação.
+                      </div>
+                    </div>
+                    <p class="observacao-tecnica">É parte fundamental para evitar lesões e melhorar performance.</p>
+                  </div>
+                </div>
+
+                <div class="tecnica-item">
+                  <div class="cabecalho-tecnica">
+                    <span class="numero-tecnica">2</span>
+                    <h5 class="titulo-tecnica">Séries Feeder</h5>
+                  </div>
+                  <div class="descricao-tecnica">
+                    <p>São séries intermediárias entre o aquecimento e a série pesada.</p>
+                    <p><strong>Funções principais:</strong></p>
+                    <ul class="lista-funcoes">
+                      <li>"Acordar" o músculo alvo</li>
+                      <li>Ajustar técnica</li>
+                      <li>Achar o peso correto da série principal</li>
+                      <li>Criar fluxo sem causar fadiga excessiva</li>
+                    </ul>
+                    <p class="observacao-tecnica">Normalmente são feitas com reps moderadas e carga moderada, preparando o corpo para a série efetiva.</p>
+                  </div>
+                </div>
+
+                <div class="tecnica-item">
+                  <div class="cabecalho-tecnica">
+                    <span class="numero-tecnica">3</span>
+                    <h5 class="titulo-tecnica">Séries Cluster</h5>
+                  </div>
+                  <div class="descricao-tecnica">
+                    <p>Método avançado para aumentar intensidade e carga total.</p>
+                    <p><strong>Funciona assim:</strong></p>
+                    <ul class="lista-funcoes">
+                      <li>Você realiza uma série pesada</li>
+                      <li>Descansa de 10 a 20 segundos</li>
+                      <li>Continua repetindo pequenos blocos de reps dentro da mesma série</li>
+                    </ul>
+                    <p class="observacao-tecnica">Isso mantém altíssima intensidade, permitindo levantar mais peso e produzir mais força. É por isso que esse método só aparece em treinos avançados.</p>
+                  </div>
+                </div>
+
+                <div class="tecnica-item">
+                  <div class="cabecalho-tecnica">
+                    <span class="numero-tecnica">4</span>
+                    <h5 class="titulo-tecnica">Séries Back-Off</h5>
+                  </div>
+                  <div class="descricao-tecnica">
+                    <p>Após uma série pesada, reduzimos a carga e realizamos uma série maior e mais controlada.</p>
+                    <p><strong>Objetivos:</strong></p>
+                    <ul class="lista-funcoes">
+                      <li>Aumentar volume total</li>
+                      <li>Melhorar técnica sob menor carga</li>
+                      <li>Gerar estímulo metabólico (pump)</li>
+                      <li>Complementar o estímulo da série pesada anterior</li>
+                    </ul>
+                    <p class="observacao-tecnica">É uma forma de fechar o exercício com estímulo completo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="conteudo-aba" id="aba-dieta">
+        <!-- Card do plano alimentar -->
+        <div class="cartao">
+          <div class="cabecalho-cartao">
+            <h2 class="titulo-cartao">🥗 Plano Alimentar</h2>
+            <p class="descricao-cartao">Dieta recomendada para seu nível e objetivo</p>
+          </div>
+          <div class="conteudo-cartao">
+            <!-- Hidratação -->
+            <div class="caixa-hidratacao">
+              <div class="titulo-hidratacao">💧 Hidratação Recomendada</div>
+              <div class="valor-hidratacao" id="valorHidratacao">0L</div>
+              <div class="descricao-hidratacao">de água por dia baseado no seu peso</div>
+            </div>
+
+            <div class="grade-dieta" id="listaDieta">
+              <!-- Refeições serão inseridas aqui via JavaScript -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Vídeo -->
+  <div id="modalVideo" class="modal-video oculto" onclick="fecharModalVideo(event)">
+    <div class="conteudo-modal-video" onclick="event.stopPropagation()">
+      <button class="fechar-modal-video" onclick="fecharModalVideo()">×</button>
+      <h3 class="titulo-modal-video" id="tituloModalVideo">Vídeo do Exercício</h3>
+      <div class="placeholder-video">
+        <div>
+          <p style="font-weight: 600; margin-bottom: 8px;">🎬 Vídeo em breve</p>
+          <p style="font-size: 13px;">Este espaço está reservado para o vídeo tutorial do exercício.<br>Você pode adicionar o link do YouTube posteriormente.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
