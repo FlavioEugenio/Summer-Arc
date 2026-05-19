@@ -37,10 +37,10 @@ Summer Arc é uma plataforma web de consultoria fitness que gera treinos e dieta
 | Nome | GitHub |
 |------|--------|
 | Flávio Eugênio | [@FlavioEugenio](https://github.com/FlavioEugenio) |
-| Angelus | — |
+| Angelus | [@angelusgarcia](https://github.com/angelusgarcia) |
 | Eike Sales | — |
 | Lucas | — |
-| Pedro Costa | — |
+| Pedro Costa | [pedrocosta09](https://github.com/pedrocosta09) |
 | Ricardo | — |
 
 ---
