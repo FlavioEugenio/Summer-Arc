@@ -40,7 +40,7 @@ Summer Arc é uma plataforma web de consultoria fitness que gera treinos e dieta
 | Angelus | [@angelusgarcia](https://github.com/angelusgarcia) |
 | Eike Sales | — |
 | Lucas | — |
-| Pedro Costa | [pedrocosta09](https://github.com/pedrocosta09) |
+| Pedro Costa | [@pedrocosta09](https://github.com/pedrocosta09) |
 | Ricardo | — |
 
 ---
