@@ -70,3 +70,7 @@ Abra o arquivo index.html diretamente no seu navegador
 ## 📄 Licença
 
 Este projeto foi desenvolvido para fins educacionais.
+
+---
+
+⭐ Se esse projeto te ajudou ou você gostou, deixa uma estrela no repositório - Obrigado pela atenção!.
